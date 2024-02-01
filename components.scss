@@ -1,0 +1,125 @@
+// colors
+$primary-color-1: #AB5429;
+$primary-color-2: #211932;
+$primary-color-3: #3D6EE3;
+$primary-color-4: #F3F3F3;
+
+$font-color-1: #030211;
+$font-color-2: #484848;
+$font-color-3: #696969;
+
+// titles
+.title {
+    font-family: Poppins;
+    color: $font-color-1;
+    font-weight: 600;
+    line-height: 150%;
+
+    &.title-1 {
+        font-size: 8rem;
+        font-weight: 700;
+    }
+
+    &.title-2 {
+        font-size: 4rem;
+    }
+
+    &.title-3 {
+        font-size: 3.5rem;
+    }
+
+    &.title-4 {
+        font-size: 3rem;
+    }
+
+    &.title-5 {
+        font-size: 2.5rem;
+    }
+
+    &.title-6 {
+        font-size: 2.2rem;
+    }
+
+    &.title-font-7 {
+        font-size: 2rem;
+    }
+}
+
+//pargraphs
+.paragraph {
+
+    .paragraph__title {
+        font-family: Poppins;
+        font-size: 2rem;
+        line-height: 20.8/20 * 100%;
+        font-weight: 600;
+        margin: 0 0 15px;
+        color: $primary-color-2;
+    }
+
+    .paragraph-1__text-1 {
+        font-family: Inter;
+        font-size: 2rem;
+        line-height: 27/20 * 100%;
+        color: $font-color-2;
+    }
+}
+
+// buttons
+.btn {
+    width: 173px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 21.5px 39.5px 21.5px 39.5px;
+    background-color: $primary-color-2;
+    color: white;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 21.6/16 * 100%;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        border: 1.5px solid $primary-color-2;
+        background-color: white;
+        color: $primary-color-2;
+    }
+}
+
+// form
+
+.form {
+    display: flex;
+    font-size: 1.6rem;
+    line-height: 21.6/16 * 100%;
+    
+    .form__label {
+        width: 42%;
+        margin: 0 0 30px;
+        
+        p {
+            color: $primary-color-2;
+            font-family: Inter;
+            margin: 0 0 9px;
+        }
+
+        input {
+            width: 100%;
+            padding: 21.5px 9.6%;
+            background-color: #F8F8F8;
+            font-family: Inter;
+            color: $primary-color-1;
+        }
+
+        &.form-label_textarea {
+            width: 100%;
+            margin: 0;
+
+            input {
+                padding: 17px 4.5%;
+            }
+        }
+    }
+}
