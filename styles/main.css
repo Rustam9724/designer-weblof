@@ -208,30 +208,10 @@
   line-height: 170%;
   color: #676767;
 }
-@media (max-width: 499px) {
-  .welcome-section .welcome-main .wellcome-main__pretitle {
-    font-size: 2.3rem;
-  }
-}
-@media (max-width: 399px) {
-  .welcome-section .welcome-main .wellcome-main__pretitle {
-    font-size: 1.7rem;
-  }
-}
 .welcome-section .welcome-main .welcome-main__title {
   font-family: Martel;
   font-size: 8rem;
   line-height: 168.75%;
-}
-@media (max-width: 499px) {
-  .welcome-section .welcome-main .welcome-main__title {
-    font-size: 6rem;
-  }
-}
-@media (max-width: 399px) {
-  .welcome-section .welcome-main .welcome-main__title {
-    font-size: 4.5rem;
-  }
 }
 .welcome-section .welcome-main .welcome-main__text {
   font-family: Inter;
@@ -239,14 +219,37 @@
   line-height: 136%;
   margin: 0 0 4.4vh;
 }
-@media (max-width: 499px) {
+@media (max-width: 599px) {
+  .welcome-section .welcome-main .welcome-main__title {
+    font-size: 6rem;
+  }
+  .welcome-section .welcome-main .wellcome-main__pretitle {
+    font-size: 2.3rem;
+  }
   .welcome-section .welcome-main .welcome-main__text {
     font-size: 1.9rem;
   }
 }
-@media (max-width: 399px) {
+@media (max-width: 499px) {
+  .welcome-section .welcome-main .wellcome-main__pretitle {
+    font-size: 1.7rem;
+  }
+  .welcome-section .welcome-main .welcome-main__title {
+    font-size: 4.5rem;
+  }
   .welcome-section .welcome-main .welcome-main__text {
     font-size: 1.4rem;
+  }
+}
+@media (max-width: 349px) {
+  .welcome-section .welcome-main .wellcome-main__pretitle {
+    font-size: 1.3rem;
+  }
+  .welcome-section .welcome-main .welcome-main__title {
+    font-size: 3.4rem;
+  }
+  .welcome-section .welcome-main .welcome-main__text {
+    font-size: 1.05rem;
   }
 }
 .welcome-section .welcome-main .welcome-main__button {
@@ -282,13 +285,13 @@
     row-gap: 10px;
   }
 }
-@media (max-width: 799px) {
+@media (max-width: 1024px) {
   .welcome-section .welcome-main {
     margin: 0 auto;
   }
 }
 
-@media (max-width: 799px) {
+@media (max-width: 924px) {
   .welcome-section {
     background-position: right;
   }
@@ -350,7 +353,7 @@ html, body {
     margin-left: 17%;
   }
 }
-@media (max-width: 799px) {
+@media (max-width: 1024px) {
   ._container {
     margin: 0 auto;
   }
