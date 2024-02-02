@@ -1,0 +1,48 @@
+@import "../styles/components.scss";
+@import "../styles/welcome-section.scss";
+
+*, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol, li {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html, body {
+    height: 100%;
+    line-height: 1;
+    font-size: 10px;
+    color: #000;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+}
+
+._container {
+    margin: 0 auto 0 33%;
+    max-width: 1218px;
+    padding: 0 20px;
+}

@@ -45,24 +45,27 @@ $font-color-3: #696969;
     }
 }
 
+.section-title {
+    font-family: Martel;
+    font-size: 4rem;
+    line-height: 67/40 * 100%;
+}
+
 //pargraphs
-.paragraph {
+.paragraph__title {
+    font-family: Poppins;
+    font-size: 2rem;
+    line-height: 20.8/20 * 100%;
+    font-weight: 600;
+    margin: 0 0 15px;
+    color: $primary-color-2;
+}
 
-    .paragraph__title {
-        font-family: Poppins;
-        font-size: 2rem;
-        line-height: 20.8/20 * 100%;
-        font-weight: 600;
-        margin: 0 0 15px;
-        color: $primary-color-2;
-    }
-
-    .paragraph-1__text-1 {
-        font-family: Inter;
-        font-size: 2rem;
-        line-height: 27/20 * 100%;
-        color: $font-color-2;
-    }
+.paragraph__text {
+    font-family: Inter;
+    font-size: 2rem;
+    line-height: 27/20 * 100%;
+    color: $font-color-2;
 }
 
 // buttons
@@ -72,7 +75,7 @@ $font-color-3: #696969;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 21.5px 39.5px 21.5px 39.5px;
+    border-radius: 35px;
     background-color: $primary-color-2;
     color: white;
     font-family: Inter;
@@ -118,7 +121,7 @@ $font-color-3: #696969;
             margin: 0;
 
             input {
-                padding: 17px 4.5%;
+                padding: 17px 4.5%  ;
             }
         }
     }

@@ -1,0 +1,83 @@
+.title {
+  font-family: Poppins;
+  color: #030211;
+  font-weight: 600;
+  line-height: 150%; }
+  .title.title-1 {
+    font-size: 8rem;
+    font-weight: 700; }
+  .title.title-2 {
+    font-size: 4rem; }
+  .title.title-3 {
+    font-size: 3.5rem; }
+  .title.title-4 {
+    font-size: 3rem; }
+  .title.title-5 {
+    font-size: 2.5rem; }
+  .title.title-6 {
+    font-size: 2.2rem; }
+  .title.title-font-7 {
+    font-size: 2rem; }
+
+.section-title {
+  font-family: Martel;
+  font-size: 4rem;
+  line-height: 167.5%; }
+
+.paragraph__title {
+  font-family: Poppins;
+  font-size: 2rem;
+  line-height: 104%;
+  font-weight: 600;
+  margin: 0 0 15px;
+  color: #211932; }
+
+.paragraph__text {
+  font-family: Inter;
+  font-size: 2rem;
+  line-height: 135%;
+  color: #484848; }
+
+.btn {
+  width: 173px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35px;
+  background-color: #211932;
+  color: white;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 135%;
+  transition: all 0.2s ease-in-out; }
+  .btn:hover {
+    border: 1.5px solid #211932;
+    background-color: white;
+    color: #211932; }
+
+.form {
+  display: flex;
+  font-size: 1.6rem;
+  line-height: 135%; }
+  .form .form__label {
+    width: 42%;
+    margin: 0 0 30px; }
+    .form .form__label p {
+      color: #211932;
+      font-family: Inter;
+      margin: 0 0 9px; }
+    .form .form__label input {
+      width: 100%;
+      padding: 21.5px 9.6%;
+      background-color: #F8F8F8;
+      font-family: Inter;
+      color: #AB5429; }
+    .form .form__label.form-label_textarea {
+      width: 100%;
+      margin: 0; }
+      .form .form__label.form-label_textarea input {
+        padding: 17px 4.5%; }
+
+/*# sourceMappingURL=components.css.map */
