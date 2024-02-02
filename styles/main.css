@@ -110,9 +110,23 @@
 
 .welcome-section {
   padding: 12vh 0 30vh;
-  background-image: url("../assets/images/welcome-section/background.jpg");
+  background: url("../assets/images/welcome-section/background.jpg");
+  position: relative;
   background-size: cover;
-  background-position: right;
+}
+.welcome-section .welcome-section__substrate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.25);
+  display: none;
+}
+@media (min-width: 800px) and (max-width: 1675px) {
+  .welcome-section .welcome-section__substrate {
+    display: block;
+  }
 }
 .welcome-section .header {
   display: -webkit-box;
@@ -120,7 +134,12 @@
   display: flex;
   -webkit-column-gap: 1.4%;
           column-gap: 1.4%;
-  margin: 0 0 11vh 50%;
+  margin: 0 0 11vh;
+  position: relative;
+  z-index: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 .welcome-section .header .header__main {
   padding: 15px 35px;
@@ -135,6 +154,11 @@
 .welcome-section .header .header__main .header__section:first-child {
   padding-right: 13px;
   border-right: 1px solid #AB5429;
+}
+@media (max-width: 399px) {
+  .welcome-section .header .header__main {
+    display: none;
+  }
 }
 .welcome-section .header .header__burger-btn {
   width: 58px;
@@ -174,7 +198,9 @@
 .welcome-section .welcome-main {
   margin: 0 0 0 25%;
   color: #211932;
-  max-width: 52%;
+  max-width: 630px;
+  position: relative;
+  z-index: 1;
 }
 .welcome-section .welcome-main .wellcome-main__pretitle {
   font-family: Martel;
@@ -182,16 +208,46 @@
   line-height: 170%;
   color: #676767;
 }
+@media (max-width: 499px) {
+  .welcome-section .welcome-main .wellcome-main__pretitle {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 399px) {
+  .welcome-section .welcome-main .wellcome-main__pretitle {
+    font-size: 1.7rem;
+  }
+}
 .welcome-section .welcome-main .welcome-main__title {
   font-family: Martel;
   font-size: 8rem;
   line-height: 168.75%;
+}
+@media (max-width: 499px) {
+  .welcome-section .welcome-main .welcome-main__title {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 399px) {
+  .welcome-section .welcome-main .welcome-main__title {
+    font-size: 4.5rem;
+  }
 }
 .welcome-section .welcome-main .welcome-main__text {
   font-family: Inter;
   font-size: 2.5rem;
   line-height: 136%;
   margin: 0 0 4.4vh;
+}
+@media (max-width: 499px) {
+  .welcome-section .welcome-main .welcome-main__text {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 399px) {
+  .welcome-section .welcome-main .welcome-main__text {
+    font-size: 1.4rem;
+  }
 }
 .welcome-section .welcome-main .welcome-main__button {
   margin: 0 0 10vh;
@@ -214,7 +270,34 @@
   padding-left: 32px;
   background-image: url("../assets/images/welcome-section/mail.svg");
 }
+@media (max-width: 499px) {
+  .welcome-section .welcome-main .welcome-main__contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 10px;
+  }
+}
+@media (max-width: 799px) {
+  .welcome-section .welcome-main {
+    margin: 0 auto;
+  }
+}
 
+@media (max-width: 799px) {
+  .welcome-section {
+    background-position: right;
+  }
+}
+@media (max-width: 399px) {
+  .welcome-section {
+    padding-top: 6vh;
+  }
+}
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
   padding: 0;
   margin: 0;
@@ -260,4 +343,15 @@ html, body {
   margin: 0 auto 0 33%;
   max-width: 1218px;
   padding: 0 20px;
+}
+
+@media (max-width: 1149px) {
+  ._container {
+    margin-left: 17%;
+  }
+}
+@media (max-width: 799px) {
+  ._container {
+    margin: 0 auto;
+  }
 }

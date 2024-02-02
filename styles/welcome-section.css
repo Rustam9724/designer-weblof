@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$primary-color-1".
-        on line 23 of D:\web\Repos\designer-weblof\styles\welcome-section.scss
+        on line 42 of D:\web\Repos\designer-weblof\styles\welcome-section.scss
 
-18: 
-19:             .header__section {
-20: 
-21:                 &:first-child {
-22:                     padding-right: 13px;
-23:                     border-right: 1px solid $primary-color-1;
-24:                 }
-25:             }
-26:         }
-27: 
-28:         .header__burger-btn {
+37: 
+38:             .header__section {
+39: 
+40:                 &:first-child {
+41:                     padding-right: 13px;
+42:                     border-right: 1px solid $primary-color-1;
+43:                 }
+44:             }
+45:         }
+46: 
+47:         @media (max-width: 399px) {
 
 Backtrace:
-D:\web\Repos\designer-weblof\styles\welcome-section.scss:23
+D:\web\Repos\designer-weblof\styles\welcome-section.scss:42
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
@@ -110,4 +110,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$primary-color-1\".\A         on line 23 of D:\web\Repos\designer-weblof\styles\welcome-section.scss\A \A 18: \A 19:             .header__section {\A 20: \A 21:                 &:first-child {\A 22:                     padding-right: 13px;\A 23:                     border-right: 1px solid $primary-color-1;\A 24:                 }\A 25:             }\A 26:         }\A 27: \A 28:         .header__burger-btn {"; }
+  content: "Error: Undefined variable: \"$primary-color-1\".\A         on line 42 of D:\web\Repos\designer-weblof\styles\welcome-section.scss\A \A 37: \A 38:             .header__section {\A 39: \A 40:                 &:first-child {\A 41:                     padding-right: 13px;\A 42:                     border-right: 1px solid $primary-color-1;\A 43:                 }\A 44:             }\A 45:         }\A 46: \A 47:         @media (max-width: 399px) {"; }
