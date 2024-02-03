@@ -51,6 +51,18 @@ $font-color-3: #696969;
     line-height: 67/40 * 100%;
 }
 
+.section-undertitle {
+    padding: 2px 11px;
+    border-radius: 40px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 19/14 * 100%;
+    letter-spacing: 40.5%;
+    color: white;
+    background-color: $primary-color-1;
+}
+
 //pargraphs
 .paragraph__title {
     font-family: Poppins;
@@ -65,6 +77,14 @@ $font-color-3: #696969;
     font-family: Inter;
     font-size: 2rem;
     line-height: 27/20 * 100%;
+    color: $font-color-2;
+}
+
+.paragraph__text-2 {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 24/18 * 100%;
     color: $font-color-2;
 }
 
