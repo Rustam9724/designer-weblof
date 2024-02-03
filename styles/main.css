@@ -46,6 +46,7 @@
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
+  text-transform: uppercase;
 }
 
 .paragraph__title {

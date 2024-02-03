@@ -34,7 +34,8 @@
   letter-spacing: 40.5%;
   color: white;
   background-color: #AB5429;
-  max-width: max-content; }
+  max-width: max-content;
+  text-transform: uppercase; }
 
 .paragraph__title {
   font-family: Poppins;
