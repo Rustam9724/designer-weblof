@@ -1,0 +1,58 @@
+.about-me {
+    padding: 6.2vw 0 6.8vw;
+
+    .about-me__undertitle {
+        margin: 0 0 20px;
+    }
+
+    .about-me__text {
+        max-width: 885px;
+
+        &:not(:last-child) {
+            margin: 0 0 35px;
+        }
+
+        &:last-child {
+            margin: 0 0 44px;
+        }
+    }
+
+    .about-me__info {
+        background-color: #f8f8f8;
+        padding: 53px 4.6%;
+        display: flex;
+        justify-content: space-between;
+        row-gap: 22px;
+        flex-wrap: wrap;
+        max-width: 926px;
+        margin: 0 0 44px;
+
+        .about-parametr {
+            display: flex;
+            flex-basis: 40%;
+
+            .about-parametr__title {
+                color: $primary-color-1;
+            }
+
+            .about-parametr__data {
+                flex-grow: 1;
+                text-align: right;
+            }
+        }
+    }
+
+    .about-me__bottom {
+        display: flex;
+        column-gap: 1.5%;
+        align-items: center;
+
+        .about-me__bottom__btn {
+
+            svg {
+                display: block;
+                margin: 0 7px 0 0;
+            }
+        }
+    }
+}

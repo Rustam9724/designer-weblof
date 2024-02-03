@@ -43,6 +43,9 @@
   letter-spacing: 40.5%;
   color: white;
   background-color: #AB5429;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .paragraph__title {
@@ -321,6 +324,67 @@
     padding-top: 6vh;
   }
 }
+.about-me {
+  padding: 6.2vw 0 6.8vw;
+}
+.about-me .about-me__undertitle {
+  margin: 0 0 20px;
+}
+.about-me .about-me__text {
+  max-width: 885px;
+}
+.about-me .about-me__text:not(:last-child) {
+  margin: 0 0 35px;
+}
+.about-me .about-me__text:last-child {
+  margin: 0 0 44px;
+}
+.about-me .about-me__info {
+  background-color: #f8f8f8;
+  padding: 53px 4.6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  row-gap: 22px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 926px;
+  margin: 0 0 44px;
+}
+.about-me .about-me__info .about-parametr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+.about-me .about-me__info .about-parametr .about-parametr__title {
+  color: #AB5429;
+}
+.about-me .about-me__info .about-parametr .about-parametr__data {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+.about-me .about-me__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.5%;
+          column-gap: 1.5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-me .about-me__bottom .about-me__bottom__btn svg {
+  display: block;
+  margin: 0 7px 0 0;
+}
+
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
   padding: 0;
   margin: 0;

@@ -33,7 +33,8 @@
   line-height: 135.7142857143%;
   letter-spacing: 40.5%;
   color: white;
-  background-color: #AB5429; }
+  background-color: #AB5429;
+  max-width: max-content; }
 
 .paragraph__title {
   font-family: Poppins;
