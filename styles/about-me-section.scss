@@ -35,9 +35,29 @@
                 color: $primary-color-1;
             }
 
+            @media (max-width: 849px) {
+                .about-parametr__title {
+                    flex-grow: 1;
+                }
+            }
+
             .about-parametr__data {
                 flex-grow: 1;
                 text-align: right;
+            }
+            
+        }
+
+        @media (max-width: 849px) {
+            .about-parametr {
+                flex-basis: 75%;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 424px) {
+            .about-parametr {
+                flex-basis: 100%;
             }
         }
     }
@@ -53,6 +73,12 @@
                 display: block;
                 margin: 0 7px 0 0;
             }
+        }
+    }
+
+    @media (max-width: 424px) {
+        .about-me__bottom {
+            flex-direction: column;
         }
     }
 }

@@ -364,11 +364,31 @@
 .about-me .about-me__info .about-parametr .about-parametr__title {
   color: #AB5429;
 }
+@media (max-width: 849px) {
+  .about-me .about-me__info .about-parametr .about-parametr__title {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
 .about-me .about-me__info .about-parametr .about-parametr__data {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   text-align: right;
+}
+@media (max-width: 849px) {
+  .about-me .about-me__info .about-parametr {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 424px) {
+  .about-me .about-me__info .about-parametr {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 .about-me .about-me__bottom {
   display: -webkit-box;
@@ -383,6 +403,14 @@
 .about-me .about-me__bottom .about-me__bottom__btn svg {
   display: block;
   margin: 0 7px 0 0;
+}
+@media (max-width: 424px) {
+  .about-me .about-me__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
@@ -432,7 +460,7 @@ html, body {
   padding: 0 20px;
 }
 
-@media (max-width: 1149px) {
+@media (max-width: 1274px) {
   ._container {
     margin-left: 17%;
   }
