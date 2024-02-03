@@ -414,6 +414,47 @@
   }
 }
 
+.services {
+  padding: 12vw 0;
+  background-image: url("../assets/images/services-section/background.jpg");
+  background-size: cover;
+}
+.services .services__title {
+  color: white;
+}
+.services .services__undertitle {
+  background-color: #211932;
+  margin: 0 0 5.7vw;
+}
+.services .services__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 3.4vw;
+  color: white;
+}
+.services .services__main .service-card {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+.services .services__main .service-card .service-card__icon {
+  margin: 0 0 7px;
+}
+.services .services__main .service-card .secrvice-card__title {
+  font-family: Martel;
+  font-size: 2.5rem;
+  line-height: 168%;
+  margin: 0 0 8px;
+}
+.services .services__main .service-card .service-card__text {
+  color: white;
+}
+
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
   padding: 0;
   margin: 0;
