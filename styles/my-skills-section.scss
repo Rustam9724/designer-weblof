@@ -1,0 +1,120 @@
+.my-skills {
+    padding: 4.6vw 0 4.3vw;
+
+    .my-skills__container {
+        display: flex;
+        align-items: flex-end;
+        column-gap: 2.7%;
+
+        .my-skills__undertitle {
+            margin: 0 0 20px;
+        }
+
+        .my-skills__text {
+            max-width: 400px;
+
+            &:not(:last-child) {
+                margin: 0 0 35px;
+            }
+        }
+
+        .my-skills__right {
+            position: relative;
+            padding: 40px 0 0;
+            flex-grow: 1;
+
+            .my-skills__image {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: 1;
+            }
+
+            .my-skills__parameters {
+                padding: 3.4vw 0 3.4vw 0;
+                background-color: #f8f8f8;
+                margin: 0 0 0 auto;
+                position: relative;
+                padding-right: 20px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 26px;
+                width: 100%;
+                align-items: flex-end;
+
+                .parametr-skill {
+                    display: flex;
+                    column-gap: 18px;
+                    width: 54.5%;
+                    justify-content: flex-end;
+
+                    p {
+                        font-family: Inter;
+                        font-size: 1.6rem;
+                        line-height: 22/16 * 100%;
+                        color: $primary-color-1;
+                    }
+
+                    input {
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        background: rgba(255, 255, 255, 0);
+                        display: block;
+                        width: 75%;
+                    }
+
+                    input[type=range]::-webkit-slider-runnable-track {
+                        height: 3px;
+                        background: $primary-color-2;
+                        border-radius: 3px;
+                    }
+
+                    input[type=range]::-moz-range-track {
+                        height: 3px;
+                        background: $primary-color-2;
+                        border-radius: 3px;
+                    }
+
+                    input[type=range]::-webkit-slider-thumb {
+                        width: 3px;
+                        height: 18.5px;
+                        background-color: $primary-color-2;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        margin-top: -8px;
+                    }
+                  
+                      
+                     input[type=range]::-moz-range-thumb {
+                        width: 3px;
+                        height: 18.5px;
+                        background-color: $primary-color-2;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        position: absolute;
+
+                      }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+.my-skills__left {
+}
+.my-skills__title {
+}
+.section-title {
+}
+
+.section__undertitle {
+}
