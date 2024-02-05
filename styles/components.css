@@ -71,7 +71,8 @@
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 135%;
-  transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out;
+  cursor: pointer; }
   .btn:hover {
     border: 1.5px solid #211932;
     background-color: white;

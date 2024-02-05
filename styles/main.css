@@ -94,6 +94,7 @@
   line-height: 135%;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 .btn:hover {
   border: 1.5px solid #211932;
@@ -665,6 +666,67 @@
 }
 .resume .resume__main .resume__side .resume__cards-block .resume__cards .card-resume .card-resume__stage .card-resume__stage__title {
   font-weight: 700;
+}
+
+.our-work {
+  padding: 7.6vw 0 0;
+}
+.our-work .work-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 3.3vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.our-work .work-header .our-work__categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 4.1%;
+          column-gap: 4.1%;
+  min-width: 49%;
+}
+.our-work .work-header .our-work__categories .our-work__category {
+  padding: 12px 2%;
+  border-radius: 40px;
+  color: #484848;
+}
+.our-work .work-header .our-work__categories .our-work__category.our-work__category_active {
+  background-color: #f4f4f4;
+}
+.our-work .our-work__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 3%;
+          column-gap: 3%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.our-work .our-work__main .our-worm__main__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+.our-work .our-work__main .our-worm__main__column img:not(:last-child) {
+  margin: 0 0 47px;
 }
 
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
