@@ -563,6 +563,96 @@
   position: absolute;
 }
 
+.resume {
+  padding: 7.8vw 0;
+  background-image: url("../assets/images/resume-section/background.jpg");
+  background-size: cover;
+}
+.resume .resume__title {
+  color: white;
+  text-align: center;
+}
+.resume .resume__undertitle {
+  margin: 0 auto;
+}
+.resume .resume__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.resume .resume__main .resume__left,
+.resume .resume__main .resume__right {
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
+}
+.resume .resume__main .resume__left .resume__main__title,
+.resume .resume__main .resume__right .resume__main__title {
+  color: white;
+  margin: 0 0 27px;
+}
+.resume .resume__main .resume__left .card-resume,
+.resume .resume__main .resume__right .card-resume {
+  padding: 39px 7.5%;
+  background-color: #f8f8f8;
+  border-radius: 30px;
+  position: relative;
+  font-family: Inter;
+  font-size: 1.8rem;
+  line-height: 133.3333333333%;
+}
+.resume .resume__main .resume__left .card-resume .card-resume__title,
+.resume .resume__main .resume__right .card-resume .card-resume__title {
+  font-family: Martel;
+  font-size: 2.5rem;
+  line-height: 130.2%;
+  color: #AB5429;
+  margin: 0 0 4px;
+}
+.resume .resume__main .resume__left .card-resume .card-resume__undertitle,
+.resume .resume__main .resume__right .card-resume .card-resume__undertitle {
+  padding: 0 0 15px;
+  border-bottom: 1px solid #a6a6a6;
+  color: #211932;
+  margin: 0 0 15px;
+}
+.resume .resume__main .resume__left .card-resume .card-resume__undertitle .card-resume__text,
+.resume .resume__main .resume__right .card-resume .card-resume__undertitle .card-resume__text {
+  color: #484848;
+}
+.resume .resume__main .resume__left .card-resume .card-resume__stage,
+.resume .resume__main .resume__right .card-resume .card-resume__stage {
+  position: absolute;
+  top: 49px;
+  left: -50%;
+  padding: 16px 6.5%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(62, 52, 83, 0)), to(#211932));
+  background: linear-gradient(rgba(62, 52, 83, 0), #211932);
+  border-radius: 10px;
+}
+.resume .resume__main .resume__left .resume__way,
+.resume .resume__main .resume__right .resume__way {
+  width: 48px;
+  height: 380px;
+}
+.resume .resume__main .resume__left .resume__way div,
+.resume .resume__main .resume__right .resume__way div {
+  background-color: #AB5429;
+}
+.resume .resume__main .resume__left .resume__way div:first-child,
+.resume .resume__main .resume__right .resume__way div:first-child {
+  width: 100%;
+  height: 2px;
+}
+.resume .resume__main .resume__left .resume__way div:last-child,
+.resume .resume__main .resume__right .resume__way div:last-child {
+  width: 2px;
+  height: 100%;
+  margin: 0 auto;
+}
+
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
   padding: 0;
   margin: 0;
