@@ -670,6 +670,7 @@
 
 .our-work {
   padding: 7.6vw 0 0;
+  margin: 0 0 7.1vw;
 }
 .our-work .work-header {
   display: -webkit-box;
@@ -727,6 +728,112 @@
 }
 .our-work .our-work__main .our-worm__main__column img:not(:last-child) {
   margin: 0 0 47px;
+}
+
+.clients-section {
+  padding: 6.9vw 0 0;
+  color: #211932;
+}
+.clients-section .clients-section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.clients-section .clients-section__undertitle {
+  margin: 0 0 39px;
+}
+.clients-section .clients__carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 21px;
+  max-width: 570px;
+}
+.clients-section .clients__carousel .clients__carousel__arrow {
+  padding: 8px 9px;
+  border-radius: 42px;
+  background-color: #F3F3F3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  min-width: 111px;
+}
+.clients-section .clients__carousel .clients__carousel__arrow.clients__carousel__arrow_right svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.clients-section .clients__carousel .clients__carousel__arrow p {
+  font-family: Inter;
+  font-size: 1.8rem;
+  line-height: 161.1111111111%;
+}
+.clients-section .clients__carousel .clients__carousel__clients-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  width: 379px;
+}
+.clients-section .clients__carousel .clients__carousel__clients-block .clients__carousel__client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 93px;
+}
+.clients-section .clients__carousel .clients__carousel__clients-block .clients__carousel__client img {
+  margin: 0 0 14px;
+}
+.clients-section .clients__carousel .clients__carousel__clients-block .clients__carousel__client h3 {
+  font-family: Martel;
+  font-size: 2.5rem;
+  line-height: 168%;
+}
+.clients-section .clients__carousel .clients__carousel__clients-block .clients__carousel__client p {
+  font-family: Inter;
+  font-size: 1.6rem;
+  line-height: 137.5%;
+  color: #AB5429;
+  text-align: center;
+}
+.clients-section .clients-section__review {
+  font-weight: 300;
+  font-style: italic;
+  color: #211932;
+  text-align: center;
+  max-width: 59%;
+  margin: 0 0 9.3vw;
+}
+.clients-section .clients-section_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 4.3%;
+          column-gap: 4.3%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
