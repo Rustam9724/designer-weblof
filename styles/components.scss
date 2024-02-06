@@ -149,3 +149,50 @@ $font-color-3: #696969;
         }
     }
 }
+
+// info-block
+
+.info-block {
+    background-color: #f8f8f8;
+    padding: 53px 4.6%;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 22px;
+    flex-wrap: wrap;
+    max-width: 926px;
+    margin: 0 0 44px;
+
+    .info-block__parametr {
+        display: flex;
+        flex-basis: 40%;
+
+        .info-block__parametr__title {
+            color: $primary-color-1;
+        }
+
+        @media (max-width: 849px) {
+            .info-block__parametr__title {
+                flex-grow: 1;
+            }
+        }
+
+        .info-block__parametr__data {
+            flex-grow: 1;
+            text-align: right;
+        }
+        
+    }
+
+    @media (max-width: 849px) {
+        .info-block__parametr {
+            flex-basis: 75%;
+            margin: 0 auto;
+        }
+    }
+
+    @media (max-width: 424px) {
+        .info-block__parametr {
+            flex-basis: 100%;
+        }
+    }
+}
