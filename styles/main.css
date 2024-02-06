@@ -836,6 +836,91 @@
           align-items: center;
 }
 
+.certification-section {
+  padding: 7.2vw 0;
+  background-image: url("../assets/images/certification-section/background.jpg");
+  background-size: cover;
+}
+.certification-section .certification-section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.certification-section .certification-section__container .certification-section__description {
+  max-width: 27%;
+}
+.certification-section .certification-section__container .certification-section__description .certification-section__title {
+  color: white;
+}
+.certification-section .certification-section__container .certification-section__description .certification-section__undertitle {
+  background-color: #211932;
+  margin: 0 0 21px;
+}
+.certification-section .certification-section__container .certification-section__description .certification-section__description__text {
+  color: white;
+}
+.certification-section .certification-section__container .certification-section__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2.3%;
+          column-gap: 2.3%;
+}
+.certification-section .certification-section__container .certification-section__cards .card-certification {
+  -ms-flex-preferred-size: 41%;
+      flex-basis: 41%;
+  padding: 35px;
+  background-color: #211932;
+  color: white;
+  border-radius: 20px;
+}
+.certification-section .certification-section__container .certification-section__cards .card-certification .card-certification_year {
+  padding: 2px 12px;
+  background-color: white;
+  border-radius: 40px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 135.7142857143%;
+  letter-spacing: 0.5px;
+  color: #211932;
+  margin: 0 0 12px auto;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+.certification-section .certification-section__container .certification-section__cards .card-certification .card-certification__title-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2.9%;
+          column-gap: 2.9%;
+  margin: 0 0 26px;
+}
+.certification-section .certification-section__container .certification-section__cards .card-certification .card-certification__title-block .card-certification__title {
+  font-family: Cabin;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 105%;
+}
+.certification-section .certification-section__container .certification-section__cards .card-certification hr {
+  width: 31%;
+  height: 3px;
+  background-color: #AB5429;
+  margin: 0 0 32px;
+}
+.certification-section .certification-section__container .certification-section__cards .card-certification .card-certification__text {
+  font-family: Martel;
+  font-size: 2.5rem;
+  line-height: 168%;
+  margin: 0 0 18px;
+  color: white;
+}
+.certification-section .certification-section__container .certification-section__cards .card-certification .card-certification__description {
+  color: white;
+  margin: 0 0 25px;
+}
+
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
   padding: 0;
   margin: 0;
