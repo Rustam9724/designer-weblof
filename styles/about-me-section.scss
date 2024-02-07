@@ -18,17 +18,10 @@
     }
 
     .about-me__info {
-        background-color: #f8f8f8;
         padding: 53px 4.6%;
-        display: flex;
-        justify-content: space-between;
-        row-gap: 22px;
-        flex-wrap: wrap;
-        max-width: 926px;
         margin: 0 0 44px;
 
         .about-parametr {
-            display: flex;
             flex-basis: 40%;
 
             .about-parametr__title {

@@ -108,28 +108,40 @@
   display: flex;
   font-size: 1.6rem;
   line-height: 135%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 8%;
+          column-gap: 8%;
+  row-gap: 30px;
 }
 .form .form__label {
-  width: 42%;
+  -ms-flex-preferred-size: 42%;
+      flex-basis: 42%;
   margin: 0 0 30px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .form .form__label p {
   color: #211932;
   font-family: Inter;
   margin: 0 0 9px;
 }
-.form .form__label input {
+.form .form__label input,
+.form .form__label textarea {
   width: 100%;
   padding: 21.5px 9.6%;
   background-color: #F8F8F8;
   font-family: Inter;
   color: #AB5429;
+  border-radius: 37px;
 }
-.form .form__label.form-label_textarea {
-  width: 100%;
+.form .form__label.form__label_textarea {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   margin: 0;
 }
-.form .form__label.form-label_textarea input {
+.form .form__label.form__label_textarea input {
   padding: 17px 4.5%;
 }
 
@@ -394,24 +406,10 @@
   margin: 0 0 44px;
 }
 .about-me .about-me__info {
-  background-color: #f8f8f8;
   padding: 53px 4.6%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  row-gap: 22px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  max-width: 926px;
   margin: 0 0 44px;
 }
 .about-me .about-me__info .about-parametr {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
 }
@@ -892,6 +890,7 @@
   padding: 7.2vw 0;
   background-image: url("../assets/images/certification-section/background.jpg");
   background-size: cover;
+  margin: 0 0 7.65vw;
 }
 .certification-section .certification-section__container {
   display: -webkit-box;
@@ -973,12 +972,70 @@
   margin: 0 0 25px;
 }
 
+.let-is-talk__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.let-is-talk__container .let-is-talk__undertitle {
+  color: #484848;
+  max-width: 60%;
+  margin: 0 0 5.7%;
+  text-align: center;
+}
+.let-is-talk__container .let-is-talk__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2.9%;
+          column-gap: 2.9%;
+}
+.let-is-talk__container .let-is-talk__main .let-is-talk__form {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+}
+.let-is-talk__container .let-is-talk__main .cv-talk {
+  -ms-flex-preferred-size: 39%;
+      flex-basis: 39%;
+  padding: 45px;
+  border-radius: 30px;
+  background-color: #f8f8f8;
+}
+.let-is-talk__container .let-is-talk__main .cv-talk .cv-talk__header {
+  background-image: url("../assets/images/let-is-talk-section/cv-talk__header-image.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  margin: 0 0 45px;
+}
+.let-is-talk__container .let-is-talk__main .cv-talk .cv-talk__header h3 {
+  font-family: Martel;
+  font-size: 3rem;
+  line-height: 170%;
+}
+.let-is-talk__container .let-is-talk__main .cv-talk .cv-talk__header p {
+  color: #AB5429;
+}
+.let-is-talk__container .let-is-talk__main .cv-talk .about-parametr {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: none;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 button {

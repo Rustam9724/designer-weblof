@@ -81,24 +81,30 @@
 .form {
   display: flex;
   font-size: 1.6rem;
-  line-height: 135%; }
+  line-height: 135%;
+  flex-wrap: wrap;
+  column-gap: 8%;
+  row-gap: 30px; }
   .form .form__label {
-    width: 42%;
-    margin: 0 0 30px; }
+    flex-basis: 42%;
+    margin: 0 0 30px;
+    flex-grow: 1; }
     .form .form__label p {
       color: #211932;
       font-family: Inter;
       margin: 0 0 9px; }
-    .form .form__label input {
+    .form .form__label input,
+    .form .form__label textarea {
       width: 100%;
       padding: 21.5px 9.6%;
       background-color: #F8F8F8;
       font-family: Inter;
-      color: #AB5429; }
-    .form .form__label.form-label_textarea {
-      width: 100%;
+      color: #AB5429;
+      border-radius: 37px; }
+    .form .form__label.form__label_textarea {
+      flex-basis: 100%;
       margin: 0; }
-      .form .form__label.form-label_textarea input {
+      .form .form__label.form__label_textarea input {
         padding: 17px 4.5%; }
 
 .info-block {

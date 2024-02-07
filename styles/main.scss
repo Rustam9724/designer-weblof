@@ -7,12 +7,14 @@
 @import "../styles/our-works.scss";
 @import "../styles/clients-section.scss";
 @import "../styles/certification-section.scss";
+@import "../styles/let-is-talk-section.scss";
 
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     border: none;
+    align-items: start;
 }
 
 button {

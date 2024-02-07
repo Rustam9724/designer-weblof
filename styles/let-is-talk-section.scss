@@ -1,0 +1,49 @@
+.let-is-talk__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .let-is-talk__undertitle {
+        color: $font-color-2;
+        max-width: 60%;
+        margin: 0 0 5.7%;
+        text-align: center;
+    }
+
+    .let-is-talk__main {
+        display: flex;
+        column-gap: 2.9%;
+
+        .let-is-talk__form {
+            flex-basis: 55%;
+        }
+
+        .cv-talk {
+            flex-basis: 39%;
+            padding: 45px;
+            border-radius: 30px;
+            background-color: #f8f8f8;
+            
+            .cv-talk__header {
+                background-image: url("../assets/images/let-is-talk-section/cv-talk__header-image.svg");
+                background-repeat: no-repeat;
+                background-position: right;
+                margin: 0 0 45px;
+
+                h3 {
+                    font-family: Martel;
+                    font-size: 3rem;
+                    line-height: 51/30 * 100%;
+                }
+
+                p {
+                    color: $primary-color-1;
+                }
+            }
+
+            .about-parametr {
+                flex-basis: 100%;
+            }
+        }
+    }
+}
