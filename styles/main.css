@@ -1084,6 +1084,85 @@
   color: #211932;
 }
 
+.aside {
+  position: absolute;
+  top: 548px;
+  left: 9.5vw;
+  bottom: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.aside .aside__info {
+  padding: 65px 79px 40px;
+  border-radius: 180px 180px 0 0;
+  background-color: #211932;
+  color: white;
+}
+.aside .aside__info .aside__image {
+  margin: 0 0 40px;
+}
+.aside .aside__info .aside__title {
+  font-family: Martel;
+  font-size: 3rem;
+  line-height: 170%;
+  margin: 0 0 14px;
+  text-align: center;
+}
+.aside .aside__info .aside__social-media {
+  padding: 0 0 14px;
+  border-bottom: 1px dashed #635b74;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 6.1%;
+          column-gap: 6.1%;
+  margin: 0 0 14px;
+}
+.aside .aside__info .aside__contacts p {
+  color: white;
+  text-align: center;
+}
+.aside .aside__info .aside__contacts p:not(:last-child) {
+  margin-bottom: 14px;
+}
+.aside .aside__nav {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 3.3vw 15.5% 0;
+  background-color: #171027;
+  width: 100%;
+}
+.aside .aside__nav ul li a {
+  display: block;
+  padding: 8px 0;
+  font-family: Martel;
+  font-size: 2rem;
+  line-height: 170%;
+  text-align: center;
+  color: #948F9F;
+  border-bottom: 1px solid #372D4D;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.aside .aside__nav ul li a:hover {
+  color: white;
+  border-color: #AB5429;
+}
+
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
   padding: 0;
   margin: 0;
@@ -1126,6 +1205,7 @@ html, body {
 .wrapper {
   overflow: hidden;
   min-height: 100%;
+  position: relative;
 }
 
 ._container {
