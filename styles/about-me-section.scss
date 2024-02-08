@@ -1,6 +1,24 @@
 .about-me {
     padding: 6.2vw 0 6.8vw;
 
+    .about-me__container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    @media (min-width: 1150px) and (max-width: 1274px) {
+        .about-me__container {
+            margin-left: 33%;
+        }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1149px) {
+        .about-me__container {
+            max-width: 47.5%;
+            margin-left: 38%;
+        }
+    }
+
     .about-me__undertitle {
         margin: 0 0 20px;
     }
@@ -39,6 +57,19 @@
                 text-align: right;
             }
             
+        }
+
+        @media (max-width: 1274px) {
+            .about-parametr {
+                flex-basis: 75%;
+                margin: 0 auto;
+            } 
+        }
+
+        @media (min-width: 1025px) and (max-width: 1149px) {
+            .about-parametr {
+                flex-basis: 100%;
+            }
         }
 
         @media (max-width: 849px) {

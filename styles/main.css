@@ -254,9 +254,6 @@
   aspect-ratio: 1;
   border-radius: 100%;
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -269,6 +266,7 @@
           flex-direction: column;
   row-gap: 4px;
   padding: 0 16px;
+  display: none;
 }
 .welcome-section .header .header__burger-btn div {
   height: 2px;
@@ -283,6 +281,13 @@
 }
 .welcome-section .header .header__burger-btn div:last-child {
   margin-right: auto;
+}
+@media (max-width: 1024px) {
+  .welcome-section .header .header__burger-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .welcome-section .welcome-main {
   margin: 0 0 0 25%;
@@ -393,6 +398,26 @@
 .about-me {
   padding: 6.2vw 0 6.8vw;
 }
+.about-me .about-me__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (min-width: 1150px) and (max-width: 1274px) {
+  .about-me .about-me__container {
+    margin-left: 33%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1149px) {
+  .about-me .about-me__container {
+    max-width: 47.5%;
+    margin-left: 38%;
+  }
+}
 .about-me .about-me__undertitle {
   margin: 0 0 20px;
 }
@@ -428,6 +453,19 @@
       -ms-flex-positive: 1;
           flex-grow: 1;
   text-align: right;
+}
+@media (max-width: 1274px) {
+  .about-me .about-me__info .about-parametr {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1149px) {
+  .about-me .about-me__info .about-parametr {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 @media (max-width: 849px) {
   .about-me .about-me__info .about-parametr {
@@ -1163,6 +1201,21 @@
   border-color: #AB5429;
 }
 
+@media (max-width: 1599px) {
+  .aside {
+    left: 4vw;
+  }
+}
+@media (max-width: 1299px) {
+  .aside {
+    left: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .aside {
+    display: none;
+  }
+}
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
   padding: 0;
   margin: 0;

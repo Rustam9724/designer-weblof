@@ -79,3 +79,21 @@
         }
     }
 }
+
+@media (max-width: 1599px) {
+    .aside {
+        left: 4vw
+    }
+}
+
+@media (max-width: 1299px) {
+    .aside {
+        left: 0
+    }
+}
+
+@media (max-width: 1024px) {
+    .aside {
+        display: none;
+    }
+}
