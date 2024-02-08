@@ -196,6 +196,11 @@
         flex-basis: 100%;
   }
 }
+@media (max-width: 374px) {
+  .info-block .info-block__parametr {
+    font-size: 1.5rem;
+  }
+}
 
 .welcome-section {
   padding: 12vh 0 30vh;
@@ -474,7 +479,7 @@
     margin: 0 auto;
   }
 }
-@media (max-width: 424px) {
+@media (max-width: 474px) {
   .about-me .about-me__info .about-parametr {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -500,6 +505,10 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    row-gap: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 

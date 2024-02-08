@@ -134,5 +134,8 @@
   @media (max-width: 424px) {
     .info-block .info-block__parametr {
       flex-basis: 100%; } }
+  @media (max-width: 374px) {
+    .info-block .info-block__parametr {
+      font-size: 1.5rem; } }
 
 /*# sourceMappingURL=components.css.map */

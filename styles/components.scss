@@ -201,4 +201,10 @@ $font-color-3: #696969;
             flex-basis: 100%;
         }
     }
+
+    @media (max-width: 374px) {
+        .info-block__parametr {
+            font-size: 1.5rem;
+        }
+    }
 }
