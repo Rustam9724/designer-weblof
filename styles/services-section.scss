@@ -3,6 +3,19 @@
     background-image: url("../assets/images/services-section/background.jpg");
     background-size: cover;
 
+    @media (min-width: 1150px) and (max-width: 1274px) {
+        .services__container {
+            margin-left: 33%;
+        }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1149px) {
+        .services__container {
+            width: 58%;
+            margin-left: 38%;
+        }
+    }
+
     .services__title {
         color: white;
     }
@@ -36,6 +49,37 @@
             .service-card__text {
                 color: white;
             }
+        }
+
+        @media (min-width: 1025px) and (max-width: 1149px) {
+            .service-card {
+                flex-basis: 43%;
+            }
+        }
+
+        @media (max-width: 949px) {
+            .service-card {
+                flex-basis: 43%;
+            }
+        }
+
+        @media (max-width: 674px) {
+            .service-card {
+                flex-basis: 66%;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 449px) {
+            .service-card {
+                flex-basis: 100%;
+            }
+        }
+    }
+
+    @media (max-width: 449px) {
+        .services__main {
+            row-gap: 40px;
         }
     }
 }

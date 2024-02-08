@@ -508,6 +508,17 @@
   background-image: url("../assets/images/services-section/background.jpg");
   background-size: cover;
 }
+@media (min-width: 1150px) and (max-width: 1274px) {
+  .services .services__container {
+    margin-left: 33%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1149px) {
+  .services .services__container {
+    width: 58%;
+    margin-left: 38%;
+  }
+}
 .services .services__title {
   color: white;
 }
@@ -542,6 +553,36 @@
 }
 .services .services__main .service-card .service-card__text {
   color: white;
+}
+@media (min-width: 1025px) and (max-width: 1149px) {
+  .services .services__main .service-card {
+    -ms-flex-preferred-size: 43%;
+        flex-basis: 43%;
+  }
+}
+@media (max-width: 949px) {
+  .services .services__main .service-card {
+    -ms-flex-preferred-size: 43%;
+        flex-basis: 43%;
+  }
+}
+@media (max-width: 674px) {
+  .services .services__main .service-card {
+    -ms-flex-preferred-size: 66%;
+        flex-basis: 66%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 449px) {
+  .services .services__main .service-card {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+@media (max-width: 449px) {
+  .services .services__main {
+    row-gap: 40px;
+  }
 }
 
 .my-skills {
