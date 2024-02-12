@@ -767,12 +767,23 @@
   background-image: url("../assets/images/resume-section/background.jpg");
   background-size: cover;
 }
+@media (min-width: 1150px) and (max-width: 1274px) {
+  .resume .resume__container {
+    margin-left: 33vw;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1149px) {
+  .resume .resume__container {
+    width: 58%;
+    margin-left: 43%;
+  }
+}
 .resume .resume__title {
   color: white;
   text-align: center;
 }
 .resume .resume__undertitle {
-  margin: 0 auto;
+  margin: 0 auto 3.9vw;
 }
 .resume .resume__main {
   display: -webkit-box;
@@ -781,14 +792,34 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .resume .resume__main .resume__side {
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
 }
 .resume .resume__main .resume__side .resume__main__title {
+  font-size: 2vw;
   color: white;
-  margin: 0 0 27px;
+  margin: 0 0 1.4vw;
+}
+@media (max-width: 1024px) {
+  .resume .resume__main .resume__side .resume__main__title {
+    font-size: 4rem;
+    margin: 0 0 27px;
+  }
+}
+@media (max-width: 524px) {
+  .resume .resume__main .resume__side .resume__main__title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 474px) {
+  .resume .resume__main .resume__side .resume__main__title {
+    text-align: center;
+    margin-bottom: 54px;
+  }
 }
 .resume .resume__main .resume__side .resume__cards-block {
   display: -webkit-box;
@@ -797,12 +828,12 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  -webkit-column-gap: 8.4%;
-          column-gap: 8.4%;
+  -webkit-column-gap: 2.4vw;
+          column-gap: 2.4vw;
 }
 .resume .resume__main .resume__side .resume__cards-block .resume__way {
-  width: 48px;
-  height: 380px;
+  width: 2.5vw;
+  aspect-ratio: 48/428;
   margin: 0 0 0 auto;
 }
 .resume .resume__main .resume__side .resume__cards-block .resume__way div {
@@ -814,56 +845,198 @@
 }
 .resume .resume__main .resume__side .resume__cards-block .resume__way div:last-child {
   width: 2px;
-  height: 100%;
+  height: 95%;
   margin: 0 auto;
+}
+@media (max-width: 1149px) {
+  .resume .resume__main .resume__side .resume__cards-block .resume__way {
+    width: 48px;
+    height: 250px;
+    aspect-ratio: unset;
+  }
+}
+@media (max-width: 1024px) {
+  .resume .resume__main .resume__side .resume__cards-block .resume__way {
+    height: 440px;
+  }
+}
+@media (max-width: 824px) {
+  .resume .resume__main .resume__side .resume__cards-block .resume__way {
+    height: 405px;
+  }
+}
+@media (max-width: 524px) {
+  .resume .resume__main .resume__side .resume__cards-block .resume__way {
+    height: 373px;
+  }
+}
+@media (max-width: 474px) {
+  .resume .resume__main .resume__side .resume__cards-block .resume__way {
+    display: none;
+  }
 }
 .resume .resume__main .resume__side .resume__cards-block .resume__cards {
   margin: 0 0 0 auto;
-  max-width: 65%;
+  max-width: 20vw;
 }
 .resume .resume__main .resume__side .resume__cards-block .resume__cards .card-resume {
-  padding: 39px 7.5%;
+  padding: 2vw 2.2vw;
   background-color: #f8f8f8;
   border-radius: 30px;
   position: relative;
   font-family: Inter;
-  font-size: 1.8rem;
+  font-size: 0.9375vw;
   line-height: 133.3333333333%;
 }
 .resume .resume__main .resume__side .resume__cards-block .resume__cards .card-resume:not(:last-child) {
-  margin: 0 0 45px;
+  margin: 0 0 2.3vw;
+}
+@media (max-width: 1024px) {
+  .resume .resume__main .resume__side .resume__cards-block .resume__cards .card-resume:not(:last-child) {
+    margin: 0 0 45px;
+  }
 }
 .resume .resume__main .resume__side .resume__cards-block .resume__cards .card-resume .card-resume__title {
   font-family: Martel;
-  font-size: 2.5rem;
+  font-size: 1.3vw;
   line-height: 130.2%;
   color: #AB5429;
-  margin: 0 0 4px;
+  margin: 0 0.2vw;
+}
+@media (max-width: 1024px) {
+  .resume .resume__main .resume__side .resume__cards-block .resume__cards .card-resume .card-resume__title {
+    font-size: 2.5rem;
+    margin: 0 0 4px;
+  }
+}
+@media (max-width: 524px) {
+  .resume .resume__main .resume__side .resume__cards-block .resume__cards .card-resume .card-resume__title {
+    font-size: 1.9rem;
+    margin: 0 0 4px;
+  }
 }
 .resume .resume__main .resume__side .resume__cards-block .resume__cards .card-resume .card-resume__undertitle {
-  padding: 0 0 15px;
+  padding: 0 0 0.78125vw;
   border-bottom: 1px solid #a6a6a6;
   color: #211932;
-  margin: 0 0 15px;
+  margin: 0 0 0.78125vw;
 }
 .resume .resume__main .resume__side .resume__cards-block .resume__cards .card-resume .card-resume__undertitle .card-resume__text {
   color: #484848;
 }
+@media (max-width: 1024px) {
+  .resume .resume__main .resume__side .resume__cards-block .resume__cards .card-resume .card-resume__undertitle {
+    padding: 0 0 15px;
+    margin: 0 0 15px;
+  }
+}
 .resume .resume__main .resume__side .resume__cards-block .resume__cards .card-resume .card-resume__stage {
   position: absolute;
-  top: 49px;
-  left: -50%;
-  padding: 16px 6.5%;
+  top: 2.55vw;
+  left: -9.6875vw;
+  padding: 0.83vw 1.25vw;
   background: #211932;
   border-radius: 10px;
   font-family: Inter;
-  font-size: 2rem;
+  font-size: 1vw;
   line-height: 135%;
   color: white;
-  min-width: 55.5%;
+  min-width: 11vw;
 }
 .resume .resume__main .resume__side .resume__cards-block .resume__cards .card-resume .card-resume__stage .card-resume__stage__title {
   font-weight: 700;
+}
+@media (max-width: 1024px) {
+  .resume .resume__main .resume__side .resume__cards-block .resume__cards .card-resume .card-resume__stage {
+    top: 49px;
+    left: -60%;
+    padding: 16px 6.5%;
+    font-size: 2rem;
+    min-width: 66%;
+  }
+}
+@media (max-width: 524px) {
+  .resume .resume__main .resume__side .resume__cards-block .resume__cards .card-resume .card-resume__stage {
+    font-size: 1.5rem;
+    min-width: 53%;
+    left: -50%;
+  }
+}
+@media (max-width: 474px) {
+  .resume .resume__main .resume__side .resume__cards-block .resume__cards .card-resume .card-resume__stage {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    min-width: 60%;
+  }
+}
+@media (max-width: 440px) {
+  .resume .resume__main .resume__side .resume__cards-block .resume__cards .card-resume .card-resume__stage {
+    min-width: 80%;
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+  .resume .resume__main .resume__side .resume__cards-block .resume__cards .card-resume {
+    padding: 39px 7.5%;
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 524px) {
+  .resume .resume__main .resume__side .resume__cards-block .resume__cards .card-resume {
+    font-size: 1.35rem;
+  }
+}
+@media (max-width: 1024px) {
+  .resume .resume__main .resume__side .resume__cards-block .resume__cards {
+    max-width: 65%;
+  }
+}
+@media (max-width: 474px) {
+  .resume .resume__main .resume__side .resume__cards-block .resume__cards {
+    max-width: 66%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 374px) {
+  .resume .resume__main .resume__side .resume__cards-block .resume__cards {
+    max-width: 83%;
+  }
+}
+@media (max-width: 1024px) {
+  .resume .resume__main .resume__side .resume__cards-block {
+    -webkit-column-gap: 8.4%;
+            column-gap: 8.4%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1149px) {
+  .resume .resume__main .resume__side {
+    -ms-flex-preferred-size: 42%;
+        flex-basis: 42%;
+  }
+}
+@media (max-width: 999px) {
+  .resume .resume__main .resume__side {
+    -ms-flex-preferred-size: 57%;
+        flex-basis: 57%;
+    margin: 0 auto;
+  }
+  .resume .resume__main .resume__side:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 824px) {
+  .resume .resume__main .resume__side {
+    -ms-flex-preferred-size: 78.5%;
+        flex-basis: 78.5%;
+  }
+}
+@media (max-width: 624px) {
+  .resume .resume__main .resume__side {
+    -ms-flex-preferred-size: 95%;
+        flex-basis: 95%;
+  }
 }
 
 .our-work {

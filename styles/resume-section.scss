@@ -1,7 +1,20 @@
 .resume {
     padding: 7.8vw 0;
     background-image: url("../assets/images/resume-section/background.jpg");
-    background-size: cover;
+    background-size: cover;  
+
+    @media (min-width: 1150px) and (max-width: 1274px) {
+        .resume__container {
+            margin-left: 33vw;
+        }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1149px) {
+        .resume__container {
+            width: 58%;
+            margin-left: 43%;
+        }
+    }
 
     .resume__title {
         color: white;
@@ -9,29 +22,51 @@
     }
 
     .resume__undertitle {
-        margin: 0 auto;
+        margin: 0 auto 3.9vw;
     }
 
     .resume__main {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
 
         .resume__side {
             flex-basis: 47%;
 
             .resume__main__title {
+                font-size: 2vw;
                 color: white;
-                margin: 0 0 27px;
+                margin: 0 0 1.4vw;
+            }
+            
+            @media (max-width: 1024px) {
+                .resume__main__title {
+                    font-size: 4rem;
+                    margin: 0 0 27px;
+                }
+            }
+
+            @media (max-width: 524px) {
+                .resume__main__title {
+                    font-size: 3rem;
+                }
+            }
+
+            @media (max-width: 474px) {
+                .resume__main__title {
+                    text-align: center;
+                    margin-bottom: 54px;
+                }
             }
 
             .resume__cards-block {
                 display: flex;
                 justify-content: end;
-                column-gap: 8.4%;
+                column-gap: 2.4vw;
 
                 .resume__way {
-                    width: 48px;
-                    height: 380px;
+                    width: 2.5vw;
+                    aspect-ratio: 48/428;
                     margin: 0 0 0 auto;
     
                     div {
@@ -44,73 +79,228 @@
     
                         &:last-child {
                             width: 2px;
-                            height: 100%;
+                            height: 95%;
                             margin: 0 auto;
                         }
                     }
                 }
 
+                @media (max-width: 1149px) {
+                    .resume__way {
+                        width: 48px;
+                        height: 250px;
+                        aspect-ratio: unset;
+                    }
+                }
+
+                @media (max-width: 1024px) {
+                    .resume__way {
+                        height: 440px;
+                    }
+                }
+
+                @media (max-width: 824px) {
+                    .resume__way {
+                        height: 405px;
+                    }
+                }
+
+                @media (max-width: 524px) {
+                    .resume__way {
+                        height: 373px;
+                    }
+                }
+
+                @media (max-width: 474px) {
+                    .resume__way {
+                        display: none;
+                    }
+                }
+
                 .resume__cards {
                     margin: 0 0 0 auto;
-                    max-width: 65%;
+                    max-width: 20vw;
 
                     .card-resume {
-                        padding: 39px 7.5%;
+                        padding: 2vw 2.2vw;
                         background-color: #f8f8f8;
                         border-radius: 30px;
                         position: relative;
                         font-family: Inter;
-                        font-size: 1.8rem;
+                        font-size: 0.9375vw;
                         line-height: 24/18 * 100%;
     
                         &:not(:last-child) {
-                            margin: 0 0 45px;
+                            margin: 0 0 2.3vw;
+                        }
+
+                        @media (max-width: 1024px) {
+                            &:not(:last-child) {
+                                margin: 0 0 45px;
+                            }
                         }
         
                         .card-resume__title {
                             font-family: Martel;
-                            font-size: 2.5rem;
+                            font-size: 1.3vw;
                             line-height: 32.55/25 * 100%;
                             color: $primary-color-1;
-                            margin: 0 0 4px;
+                            margin: 0 0.2vw;
+                        }
+
+                        @media (max-width: 1024px) {
+                            .card-resume__title {
+                                font-size: 2.5rem;
+                                margin: 0 0 4px;
+                            }
+                        }
+
+                        @media (max-width: 524px) {
+                            .card-resume__title {
+                                font-size: 1.9rem;
+                                margin: 0 0 4px;
+                            }
                         }
         
                         .card-resume__undertitle {
-                            padding: 0 0 15px;
+                            padding: 0 0 0.78125vw;
                             border-bottom: 1px solid #a6a6a6;
                             color: $primary-color-2;
-                            margin: 0 0 15px;
+                            margin: 0 0 0.78125vw;
         
                             .card-resume__text {
                                 color: $font-color-2;
                             }
                         }
+
+                        @media (max-width: 1024px) {
+                            .card-resume__undertitle {
+                                padding: 0 0 15px;
+                                margin: 0 0 15px;
+                            }  
+                        }
         
                         .card-resume__stage {
                             position: absolute;
-                            top: 49px;
-                            left: -50%;
-                            padding: 16px 6.5%;
+                            top: 2.55vw;
+                            left: -9.6875vw;
+                            padding: 0.83vw 1.25vw;
                             background: $primary-color-2;
                             border-radius: 10px;
                             font-family: Inter;
-                            font-size: 2rem;
+                            font-size: 1vw;
                             line-height: 27/20 * 100%;
                             color: white;
-                            min-width: 55.5%;
+                            min-width: 11vw;
     
                             .card-resume__stage__title {
                                 font-weight: 700;
                             }
                         }
+
+                        @media (max-width: 1024px) {
+                            .card-resume__stage {
+                                top: 49px;
+                                left: -60%;
+                                padding: 16px 6.5%;
+                                font-size: 2rem;
+                                min-width: 66%;
+                            }
+                        }
+
+                        @media (max-width: 524px) {
+                            .card-resume__stage {
+                                font-size: 1.5rem;
+                                min-width: 53%;
+                                left: -50%;
+                            }
+                        }
+                        
+                        @media (max-width: 474px) {
+                            .card-resume__stage {
+                                top: 0;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                min-width: 60%;
+                            }
+                        }
+
+                        @media (max-width: 440px) {
+                            .card-resume__stage {
+                                min-width: 80%;
+                                text-align: center;
+                            }
+                        }
+                    }
+
+                    @media (max-width: 1024px) {
+                        .card-resume {
+                            padding: 39px 7.5%;
+                            font-size: 1.8rem;
+                        }
+                    }
+
+                    @media (max-width: 524px) {
+                        .card-resume {
+                            font-size: 1.35rem;
+                        }
+                    }
+                }
+
+                @media (max-width: 1024px) {
+                    .resume__cards {
+                        max-width: 65%;
+                    }
+                }
+
+                @media (max-width: 474px) {
+                    .resume__cards {
+                        max-width: 66%;
+                        margin: 0 auto;
+                    }
+                }
+
+                @media (max-width: 374px) {
+                    .resume__cards {
+                        max-width: 83%;
                     }
                 }
             }
+
+            @media (max-width: 1024px) {
+                .resume__cards-block {
+                    column-gap: 8.4%;
+                }
+            }
+        }
+
+        @media (min-width: 1025px) and (max-width: 1149px) {
+            .resume__side {
+                flex-basis: 42%;
+            }
+        }
+
+        @media (max-width: 999px) {
+            .resume__side { 
+                flex-basis: 57%;
+                margin: 0 auto;
+
+                &:not(:last-child) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+        @media (max-width: 824px) {
+            .resume__side {
+                flex-basis: 78.5%;
+            }
+        }
+
+        @media (max-width: 624px) {
+            .resume__side {
+                flex-basis: 95%;
+            }
         }
     }
-}
-
-
-
-.card-resume__stage__text {
 }
