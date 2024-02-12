@@ -37,6 +37,12 @@
   max-width: max-content;
   text-transform: uppercase; }
 
+@media (max-width: 549px) {
+  .section-title {
+    font-size: 5.3rem; }
+
+  .section-undertitle {
+    font-size: 1.9rem; } }
 .paragraph__title {
   font-family: Poppins;
   font-size: 2rem;

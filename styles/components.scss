@@ -65,6 +65,16 @@ $font-color-3: #696969;
     text-transform: uppercase;
 }
 
+@media (max-width: 549px) {
+    .section-title {
+        font-size: 5.3rem;
+    }
+
+    .section-undertitle {
+        font-size: 1.9rem;
+    }
+}
+
 //pargraphs
 .paragraph__title {
     font-family: Poppins;

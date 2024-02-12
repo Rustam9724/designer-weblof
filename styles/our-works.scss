@@ -2,16 +2,40 @@
     padding: 7.6vw 0 0;
     margin: 0 0 7.1vw;
 
+    @media (min-width: 1150px) and (max-width: 1274px) {
+        .our-work__container {
+            margin-left: 33%;
+        }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1149px) {
+        .our-work__container {
+            margin-left: 38%;
+            max-width: 58%;
+        }
+    }
+
     .work-header {
         display: flex;
         justify-content: space-between;
         margin: 0 0 3.3vw;
         align-items: center;
+        row-gap: 30px;
+
+        @media (max-width: 549px) {
+            & > * {
+                flex-basis: 100%;
+            }
+        }
 
         .our-work__categories {
             display: flex;
             column-gap: 4.1%;
             min-width: 49%;
+            flex-grow: 1;
+            flex-shrink: 1;
+            justify-content: center;
+            flex-wrap: wrap;
 
             .our-work__category {
                 padding: 12px 2%;
@@ -23,6 +47,40 @@
                 }
             }
         }
+
+        @media (max-width: 1524px) {
+            .our-work__categories {
+                flex-grow: 0;
+            }
+        }
+
+        @media (min-width: 1025px) and (max-width: 1224px) {
+            .our-work__categories {
+                order: 1;
+                flex-basis: 100%;
+                justify-content: start;
+            }
+        }
+
+        @media (max-width: 824px) {
+            .our-work__categories {
+                order: 1;
+                flex-basis: 100%;
+                justify-content: center;
+            }
+        }
+    }
+
+    @media (min-width: 1025px) and (max-width: 1224px) {
+        .work-header {
+            flex-wrap: wrap;
+        }
+    }
+
+    @media (max-width: 824px) {
+        .work-header {
+            flex-wrap: wrap;
+        }
     }
 
     .our-work__main {
@@ -30,17 +88,34 @@
         column-gap: 3%;
         align-items: stretch;
         flex-wrap: wrap;
+        row-gap: 40px;
+        justify-content: center;
 
-        .our-worm__main__column {
+        .our-work__main__column {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             flex-basis: 30%;
+            flex-shrink: 1;
 
             img {
+                width: 100%;
+
                 &:not(:last-child) {
                     margin: 0 0 47px;
                 }
+            }
+        }
+
+        @media (max-width: 974px) {
+            .our-work__main__column {
+                flex-basis: 48%;
+            }
+        }
+
+        @media (max-width: 549px) {
+            .our-work__main__column {
+                flex-basis: 95%;
             }
         }
     }

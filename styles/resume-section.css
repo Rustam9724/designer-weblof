@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$primary-color-1".
-        on line 73 of D:\web\Repos\designer-weblof\styles\resume-section.scss
+        on line 72 of D:\web\Repos\designer-weblof\styles\resume-section.scss
 
-68:                     width: 2.5vw;
-69:                     aspect-ratio: 48/428;
-70:                     margin: 0 0 0 auto;
-71:     
-72:                     div {
-73:                         background-color: $primary-color-1;
-74:                     
-75:                         &:first-child {
-76:                             width: 100%;
-77:                             height: 2px;
-78:                         }
+67:                     width: 2.5vw;
+68:                     aspect-ratio: 48/428;
+69:                     margin: 0 0 0 auto;
+70:     
+71:                     div {
+72:                         background-color: $primary-color-1;
+73:                     
+74:                         &:first-child {
+75:                             width: 100%;
+76:                             height: 2px;
+77:                         }
 
 Backtrace:
-D:\web\Repos\designer-weblof\styles\resume-section.scss:73
+D:\web\Repos\designer-weblof\styles\resume-section.scss:72
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -117,4 +117,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$primary-color-1\".\A         on line 73 of D:\web\Repos\designer-weblof\styles\resume-section.scss\A \A 68:                     width: 2.5vw;\A 69:                     aspect-ratio: 48/428;\A 70:                     margin: 0 0 0 auto;\A 71:     \A 72:                     div {\A 73:                         background-color: $primary-color-1;\A 74:                     \A 75:                         &:first-child {\A 76:                             width: 100%;\A 77:                             height: 2px;\A 78:                         }"; }
+  content: "Error: Undefined variable: \"$primary-color-1\".\A         on line 72 of D:\web\Repos\designer-weblof\styles\resume-section.scss\A \A 67:                     width: 2.5vw;\A 68:                     aspect-ratio: 48/428;\A 69:                     margin: 0 0 0 auto;\A 70:     \A 71:                     div {\A 72:                         background-color: $primary-color-1;\A 73:                     \A 74:                         &:first-child {\A 75:                             width: 100%;\A 76:                             height: 2px;\A 77:                         }"; }
