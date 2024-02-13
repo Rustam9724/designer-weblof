@@ -5,11 +5,11 @@ Error: Undefined variable: "$primary-color-2".
 1: .clients-section {
 2:     padding: 6.9vw 0 0;
 3:     color: $primary-color-2;
-4: 
-5:     .clients-section__container {
-6:         display: flex;
-7:         flex-direction: column;
-8:         align-items: center;
+4:     margin: 0 0 44px;
+5: 
+6:     .clients-section__container {
+7:         display: flex;
+8:         flex-direction: column;
 
 Backtrace:
 D:\web\Repos\designer-weblof\styles\clients-section.scss:3
@@ -59,4 +59,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$primary-color-2\".\A         on line 3 of D:\web\Repos\designer-weblof\styles\clients-section.scss\A \A 1: .clients-section {\A 2:     padding: 6.9vw 0 0;\A 3:     color: $primary-color-2;\A 4: \A 5:     .clients-section__container {\A 6:         display: flex;\A 7:         flex-direction: column;\A 8:         align-items: center;"; }
+  content: "Error: Undefined variable: \"$primary-color-2\".\A         on line 3 of D:\web\Repos\designer-weblof\styles\clients-section.scss\A \A 1: .clients-section {\A 2:     padding: 6.9vw 0 0;\A 3:     color: $primary-color-2;\A 4:     margin: 0 0 44px;\A 5: \A 6:     .clients-section__container {\A 7:         display: flex;\A 8:         flex-direction: column;"; }
