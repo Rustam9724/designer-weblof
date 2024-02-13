@@ -58,6 +58,11 @@
     font-size: 1.9rem;
   }
 }
+@media (max-width: 374px) {
+  .section-title {
+    font-size: 4rem;
+  }
+}
 .paragraph__title {
   font-family: Poppins;
   font-size: 2rem;
@@ -1425,12 +1430,30 @@
 .certification-section .certification-section__container .certification-section__description .certification-section__description__text {
   color: white;
 }
+@media (min-width: 1025px) and (max-width: 1149px) {
+  .certification-section .certification-section__container .certification-section__description {
+    max-width: 51%;
+  }
+}
+@media (max-width: 774px) {
+  .certification-section .certification-section__container .certification-section__description {
+    max-width: 51%;
+  }
+}
+@media (max-width: 424px) {
+  .certification-section .certification-section__container .certification-section__description {
+    max-width: 91%;
+  }
+}
 .certification-section .certification-section__container .certification-section__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 2.3%;
           column-gap: 2.3%;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 .certification-section .certification-section__container .certification-section__cards .card-certification {
   -ms-flex-preferred-size: 41%;
@@ -1439,6 +1462,16 @@
   background-color: #211932;
   color: white;
   border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .certification-section .certification-section__container .certification-section__cards .card-certification .card-certification_year {
   padding: 2px 12px;
@@ -1485,6 +1518,37 @@
 .certification-section .certification-section__container .certification-section__cards .card-certification .card-certification__description {
   color: white;
   margin: 0 0 25px;
+}
+@media (max-width: 599px) {
+  .certification-section .certification-section__container .certification-section__cards .card-certification {
+    -ms-flex-preferred-size: 73%;
+        flex-basis: 73%;
+  }
+}
+@media (max-width: 599px) {
+  .certification-section .certification-section__container .certification-section__cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 30px;
+  }
+}
+@media (max-width: 1749px) {
+  .certification-section .certification-section__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 40px;
+  }
+}
+@media (min-width: 1150px) and (max-width: 1274px) {
+  .certification-section .certification-section__container {
+    margin-left: 33%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1149px) {
+  .certification-section .certification-section__container {
+    margin-left: 38%;
+    width: 58%;
+  }
 }
 
 .let-is-talk {
