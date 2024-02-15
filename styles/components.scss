@@ -224,3 +224,10 @@ $font-color-3: #696969;
         }
     }
 }
+
+@media (max-width: 430px) {
+    .info-block {
+        padding: 30px 4.6%;
+        margin: 0;
+    }
+}

@@ -216,6 +216,12 @@
   }
 }
 
+@media (max-width: 430px) {
+  .info-block {
+    padding: 30px 4.6%;
+    margin: 0;
+  }
+}
 .welcome-section {
   padding: 12vh 0 30vh;
   background: url("../assets/images/welcome-section/background.jpg");
@@ -1554,8 +1560,7 @@
 .let-is-talk {
   margin: 0 0 6.25vw;
 }
-
-.let-is-talk__container {
+.let-is-talk .let-is-talk__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1567,47 +1572,128 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.let-is-talk__container .let-is-talk__undertitle {
+.let-is-talk .let-is-talk__container .let-is-talk__undertitle {
   color: #484848;
   max-width: 60%;
   margin: 0 0 5.7%;
   text-align: center;
 }
-.let-is-talk__container .let-is-talk__main {
+@media (min-width: 1025px) and (max-width: 1174px) {
+  .let-is-talk .let-is-talk__container .let-is-talk__undertitle {
+    max-width: 80%;
+  }
+}
+@media (max-width: 774px) {
+  .let-is-talk .let-is-talk__container .let-is-talk__undertitle {
+    max-width: 95%;
+  }
+}
+@media (max-width: 524px) {
+  .let-is-talk .let-is-talk__container .let-is-talk__undertitle {
+    font-size: 1.35rem;
+  }
+}
+.let-is-talk .let-is-talk__container .let-is-talk__main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 2.9%;
           column-gap: 2.9%;
 }
-.let-is-talk__container .let-is-talk__main .let-is-talk__form {
+.let-is-talk .let-is-talk__container .let-is-talk__main .let-is-talk__form {
   -ms-flex-preferred-size: 55%;
       flex-basis: 55%;
 }
-.let-is-talk__container .let-is-talk__main .cv-talk {
+@media (max-width: 1524px) {
+  .let-is-talk .let-is-talk__container .let-is-talk__main .let-is-talk__form {
+    -ms-flex-preferred-size: 41%;
+        flex-basis: 41%;
+  }
+}
+@media (max-width: 1174px) {
+  .let-is-talk .let-is-talk__container .let-is-talk__main .let-is-talk__form {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+  }
+}
+.let-is-talk .let-is-talk__container .let-is-talk__main .cv-talk {
   -ms-flex-preferred-size: 39%;
       flex-basis: 39%;
   padding: 45px;
   border-radius: 30px;
   background-color: #f8f8f8;
 }
-.let-is-talk__container .let-is-talk__main .cv-talk .cv-talk__header {
+.let-is-talk .let-is-talk__container .let-is-talk__main .cv-talk .cv-talk__header {
   background-image: url("../assets/images/let-is-talk-section/cv-talk__header-image.svg");
   background-repeat: no-repeat;
   background-position: right;
   margin: 0 0 45px;
 }
-.let-is-talk__container .let-is-talk__main .cv-talk .cv-talk__header h3 {
+.let-is-talk .let-is-talk__container .let-is-talk__main .cv-talk .cv-talk__header h3 {
   font-family: Martel;
   font-size: 3rem;
   line-height: 170%;
 }
-.let-is-talk__container .let-is-talk__main .cv-talk .cv-talk__header p {
+.let-is-talk .let-is-talk__container .let-is-talk__main .cv-talk .cv-talk__header p {
   color: #AB5429;
 }
-.let-is-talk__container .let-is-talk__main .cv-talk .about-parametr {
+@media (max-width: 430px) {
+  .let-is-talk .let-is-talk__container .let-is-talk__main .cv-talk .cv-talk__header {
+    margin: 0 0 19px;
+  }
+}
+.let-is-talk .let-is-talk__container .let-is-talk__main .cv-talk .about-parametr {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+}
+@media (max-width: 430px) {
+  .let-is-talk .let-is-talk__container .let-is-talk__main .cv-talk .about-parametr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (min-width: 1175px) and (max-width: 1524px) {
+  .let-is-talk .let-is-talk__container .let-is-talk__main .cv-talk {
+    -ms-flex-preferred-size: 52%;
+        flex-basis: 52%;
+  }
+}
+@media (max-width: 1174px) {
+  .let-is-talk .let-is-talk__container .let-is-talk__main .cv-talk {
+    -ms-flex-preferred-size: 69%;
+        flex-basis: 69%;
+  }
+}
+@media (max-width: 599px) {
+  .let-is-talk .let-is-talk__container .let-is-talk__main .cv-talk {
+    -ms-flex-preferred-size: 92%;
+        flex-basis: 92%;
+  }
+}
+@media (max-width: 430px) {
+  .let-is-talk .let-is-talk__container .let-is-talk__main .cv-talk {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+@media (max-width: 1174px) {
+  .let-is-talk .let-is-talk__container .let-is-talk__main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 40px;
+  }
+}
+@media (min-width: 1151px) and (max-width: 1274px) {
+  .let-is-talk .let-is-talk__container {
+    margin-left: 33%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1150px) {
+  .let-is-talk .let-is-talk__container {
+    margin-left: 38%;
+  }
 }
 
 .footer .footer__top {

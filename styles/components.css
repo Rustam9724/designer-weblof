@@ -147,4 +147,9 @@
     .info-block .info-block__parametr {
       font-size: 1.5rem; } }
 
+@media (max-width: 430px) {
+  .info-block {
+    padding: 30px 4.6%;
+    margin: 0; } }
+
 /*# sourceMappingURL=components.css.map */

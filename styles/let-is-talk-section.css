@@ -1,24 +1,35 @@
 /*
 Error: Undefined variable: "$font-color-2".
-        on line 11 of D:\web\Repos\designer-weblof\styles\let-is-talk-section.scss
+        on line 10 of D:\web\Repos\designer-weblof\styles\let-is-talk-section.scss
 
-6:     display: flex;
-7:     flex-direction: column;
-8:     align-items: center;
-9: 
-10:     .let-is-talk__undertitle {
-11:         color: $font-color-2;
-12:         max-width: 60%;
-13:         margin: 0 0 5.7%;
-14:         text-align: center;
-15:     }
-16: 
+5:         display: flex;
+6:         flex-direction: column;
+7:         align-items: center;
+8:     
+9:         .let-is-talk__undertitle {
+10:             color: $font-color-2;
+11:             max-width: 60%;
+12:             margin: 0 0 5.7%;
+13:             text-align: center;
+14:         }
+15: 
 
 Backtrace:
-D:\web\Repos\designer-weblof\styles\let-is-talk-section.scss:11
+D:\web\Repos\designer-weblof\styles\let-is-talk-section.scss:10
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -73,4 +84,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$font-color-2\".\A         on line 11 of D:\web\Repos\designer-weblof\styles\let-is-talk-section.scss\A \A 6:     display: flex;\A 7:     flex-direction: column;\A 8:     align-items: center;\A 9: \A 10:     .let-is-talk__undertitle {\A 11:         color: $font-color-2;\A 12:         max-width: 60%;\A 13:         margin: 0 0 5.7%;\A 14:         text-align: center;\A 15:     }\A 16: "; }
+  content: "Error: Undefined variable: \"$font-color-2\".\A         on line 10 of D:\web\Repos\designer-weblof\styles\let-is-talk-section.scss\A \A 5:         display: flex;\A 6:         flex-direction: column;\A 7:         align-items: center;\A 8:     \A 9:         .let-is-talk__undertitle {\A 10:             color: $font-color-2;\A 11:             max-width: 60%;\A 12:             margin: 0 0 5.7%;\A 13:             text-align: center;\A 14:         }\A 15: "; }
