@@ -45,7 +45,10 @@
     font-size: 1.9rem; } }
 @media (max-width: 374px) {
   .section-title {
-    font-size: 4rem; } }
+    font-size: 4rem; }
+
+  .section-undertitle {
+    font-size: 1.4rem; } }
 .paragraph__title {
   font-family: Poppins;
   font-size: 2rem;

@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$primary-color-1".
-        on line 42 of D:\web\Repos\designer-weblof\styles\welcome-section.scss
+        on line 47 of D:\web\Repos\designer-weblof\styles\welcome-section.scss
 
-37: 
-38:             .header__section {
-39: 
-40:                 &:first-child {
-41:                     padding-right: 13px;
-42:                     border-right: 1px solid $primary-color-1;
+42:                     line-height: 58/20 * 100%;
 43:                 }
-44:             }
-45:         }
-46: 
-47:         @media (max-width: 399px) {
+44: 
+45:                 &:first-child {
+46:                     padding-right: 13px;
+47:                     border-right: 1px solid $primary-color-1;
+48:                     border-radius: 35px 0 0 35px;
+49:                 }
+50: 
+51:                 &:last-child {
+52:                     border-radius: 0 35px 35px 0;
 
 Backtrace:
-D:\web\Repos\designer-weblof\styles\welcome-section.scss:42
+D:\web\Repos\designer-weblof\styles\welcome-section.scss:47
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
@@ -110,4 +110,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$primary-color-1\".\A         on line 42 of D:\web\Repos\designer-weblof\styles\welcome-section.scss\A \A 37: \A 38:             .header__section {\A 39: \A 40:                 &:first-child {\A 41:                     padding-right: 13px;\A 42:                     border-right: 1px solid $primary-color-1;\A 43:                 }\A 44:             }\A 45:         }\A 46: \A 47:         @media (max-width: 399px) {"; }
+  content: "Error: Undefined variable: \"$primary-color-1\".\A         on line 47 of D:\web\Repos\designer-weblof\styles\welcome-section.scss\A \A 42:                     line-height: 58/20 * 100%;\A 43:                 }\A 44: \A 45:                 &:first-child {\A 46:                     padding-right: 13px;\A 47:                     border-right: 1px solid $primary-color-1;\A 48:                     border-radius: 35px 0 0 35px;\A 49:                 }\A 50: \A 51:                 &:last-child {\A 52:                     border-radius: 0 35px 35px 0;"; }
