@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$primary-color-1".
-        on line 80 of D:\web\Repos\designer-weblof\styles\my-skills-section.scss
+        on line 82 of D:\web\Repos\designer-weblof\styles\my-skills-section.scss
 
-75: 
-76:                     p {
-77:                         font-family: Inter;
-78:                         font-size: 1.6rem;
-79:                         line-height: 22/16 * 100%;
-80:                         color: $primary-color-1;
-81:                     }
-82: 
-83:                     input {
-84:                         -webkit-appearance: none;
-85:                         -moz-appearance: none;
+77: 
+78:                     p {
+79:                         font-family: Inter;
+80:                         font-size: 1.6rem;
+81:                         line-height: 22/16 * 100%;
+82:                         color: $primary-color-1;
+83:                     }
+84: 
+85:                     input {
+86:                         -webkit-appearance: none;
+87:                         -moz-appearance: none;
 
 Backtrace:
-D:\web\Repos\designer-weblof\styles\my-skills-section.scss:80
+D:\web\Repos\designer-weblof\styles\my-skills-section.scss:82
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -117,4 +117,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$primary-color-1\".\A         on line 80 of D:\web\Repos\designer-weblof\styles\my-skills-section.scss\A \A 75: \A 76:                     p {\A 77:                         font-family: Inter;\A 78:                         font-size: 1.6rem;\A 79:                         line-height: 22/16 * 100%;\A 80:                         color: $primary-color-1;\A 81:                     }\A 82: \A 83:                     input {\A 84:                         -webkit-appearance: none;\A 85:                         -moz-appearance: none;"; }
+  content: "Error: Undefined variable: \"$primary-color-1\".\A         on line 82 of D:\web\Repos\designer-weblof\styles\my-skills-section.scss\A \A 77: \A 78:                     p {\A 79:                         font-family: Inter;\A 80:                         font-size: 1.6rem;\A 81:                         line-height: 22/16 * 100%;\A 82:                         color: $primary-color-1;\A 83:                     }\A 84: \A 85:                     input {\A 86:                         -webkit-appearance: none;\A 87:                         -moz-appearance: none;"; }

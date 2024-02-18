@@ -72,6 +72,8 @@
                     width: 54.5%;
                     justify-content: flex-end;
                     align-items: center;
+                    position: relative;
+                    z-index: 1;
 
                     p {
                         font-family: Inter;
@@ -87,18 +89,9 @@
                         background: rgba(255, 255, 255, 0);
                         display: block;
                         width: 75%;
-                    }
-
-                    input[type=range]::-webkit-slider-runnable-track {
                         height: 3px;
-                        background: $primary-color-2;
                         border-radius: 3px;
-                    }
-
-                    input[type=range]::-moz-range-track {
-                        height: 3px;
-                        background: $primary-color-2;
-                        border-radius: 3px;
+                        background-color: $primary-color-2;
                     }
 
                     input[type=range]::-webkit-slider-thumb {
@@ -110,7 +103,6 @@
                         appearance: none;
                         margin-top: -8px;
                     }
-                  
                       
                      input[type=range]::-moz-range-thumb {
                         width: 3px;

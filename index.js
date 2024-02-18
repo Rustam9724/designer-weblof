@@ -1,4 +1,4 @@
-// ----- ВЫДВИЖЕНИЕ И ЗАКРЫТИЕ БУРГЕР-МЕНЮ   //
+// ----- ВЫДВИЖЕНИЕ И ЗАКРЫТИЕ БУРГЕР-МЕНЮ ----- //
 
 // Определение элементов
 const body = document.querySelector('body');
@@ -31,3 +31,9 @@ burgerBtn.addEventListener('click', () => burgerMenuToggle('on'));
 burgerMenuItems.forEach(item => {
     item.addEventListener('click', () => burgerMenuToggle('off'))
 });
+
+
+// ----- СТИЛИЗАЦИЯ ПОЛЗУНКА ----- //
+document.querySelectorAll('.parametr-skill input').forEach(elem => {
+    elem.style.background = `linear-gradient(to right, #211932 ${elem.value}%, #D6D6D6 ${elem.value}%)`
+})
