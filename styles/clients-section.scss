@@ -34,6 +34,8 @@
             align-items: center;
             column-gap: 10px;
             min-width: 111px;
+            cursor: pointer;
+            transition: all 0.2s start;
 
             &.clients__carousel__arrow_right {
                 
@@ -46,6 +48,15 @@
                 font-family: Inter;
                 font-size: 1.8rem;
                 line-height: 29/18 * 100%;
+                transition: all 0.2s start;
+            }
+
+            &:hover {
+                background-color: #484848;
+
+                p {
+                    color: white;
+                }
             }
         }
 
@@ -59,13 +70,25 @@
             display: flex;
             overflow: hidden;
             justify-content: space-between;
-            // max-width: 49%;
 
             .clients__carousel__client {
                 display: flex;
                 flex-direction: column;
                 flex-grow: 1;
                 min-width: 100%;
+                transition: all 0.5s ease-out;
+
+                &.clients__carousel__client_1-client {
+                    margin-left: 0;
+                }
+
+                &.clients__carousel__client_2-client {
+                    margin-left: -100%;
+                }
+
+                &.clients__carousel__client_3-client {
+                    margin-left: -200%;
+                }
                 
                 img {
                     margin: 0 auto 14px;

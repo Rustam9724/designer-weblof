@@ -1329,6 +1329,9 @@
   -webkit-column-gap: 10px;
           column-gap: 10px;
   min-width: 111px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s start;
+  transition: all 0.2s start;
 }
 .clients-section .clients__carousel .clients__carousel__arrow.clients__carousel__arrow_right svg {
   -webkit-transform: rotate(180deg);
@@ -1338,6 +1341,14 @@
   font-family: Inter;
   font-size: 1.8rem;
   line-height: 161.1111111111%;
+  -webkit-transition: all 0.2s start;
+  transition: all 0.2s start;
+}
+.clients-section .clients__carousel .clients__carousel__arrow:hover {
+  background-color: #484848;
+}
+.clients-section .clients__carousel .clients__carousel__arrow:hover p {
+  color: white;
 }
 @media (max-width: 599px) {
   .clients-section .clients__carousel .clients__carousel__arrow {
@@ -1365,6 +1376,17 @@
       -ms-flex-positive: 1;
           flex-grow: 1;
   min-width: 100%;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.clients-section .clients__carousel .clients__carousel__clients-block .clients__carousel__client.clients__carousel__client_1-client {
+  margin-left: 0;
+}
+.clients-section .clients__carousel .clients__carousel__clients-block .clients__carousel__client.clients__carousel__client_2-client {
+  margin-left: -100%;
+}
+.clients-section .clients__carousel .clients__carousel__clients-block .clients__carousel__client.clients__carousel__client_3-client {
+  margin-left: -200%;
 }
 .clients-section .clients__carousel .clients__carousel__clients-block .clients__carousel__client img {
   margin: 0 auto 14px;

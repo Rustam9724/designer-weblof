@@ -37,3 +37,78 @@ burgerMenuItems.forEach(item => {
 document.querySelectorAll('.parametr-skill input').forEach(elem => {
     elem.style.background = `linear-gradient(to right, #211932 ${elem.value}%, #D6D6D6 ${elem.value}%)`
 })
+
+// ----- Работа карусели в секции Clients & Reviews ----- //
+
+// Определение элементов
+const firstClient = document.querySelector(".clients__carousel__client");
+const leftArrow = document.querySelector(".clients__carousel__arrow_left")
+const rightArrow = document.querySelector(".clients__carousel__arrow_right")
+const clientBlock = document.querySelector('.clients__carousel__clients-block');
+const radios = document.querySelectorAll('.clients__carousel__radio-block input');
+
+// Определяем номер клиента, отоброжаемого на слайдере
+let clientNumber = 1;
+
+// Функция для движения карусели
+function carouselMove(side) {
+    if (side === 'left') {
+        if (clientNumber > 1) {
+            clientNumber --;
+        }
+    } else if (side === 'right') {
+        if (clientNumber < 3) {
+            clientNumber ++;
+        }
+    }
+
+    // Меняем стиль первого клиента для передвижения слайдера
+    firstClient.className = `clients__carousel__client clients__carousel__client_${clientNumber}-client`;
+}
+
+// Вешаем обработчики событий на стрелки слайдера
+leftArrow.addEventListener('click', () => {carouselMove('left')});
+rightArrow.addEventListener('click', () => {carouselMove('right')});
+
+// Пишем функционал для перелистывания слайдера пальцем на мобильных устройствах
+// Опрежеляем начальную и конечную точки касания
+let points = {
+    startPoint: null,
+    finishPoint: null
+}
+
+// Функция для обработки конца касания
+function setFinishPoint(e) {
+    // Запись координаты конца касания
+    points.finishPoint = e.changedTouches[0].clientX;
+    // Определение расстояния между точками начала и конча касания
+    let pointsDifference = points.startPoint - points.finishPoint
+
+    // Изменение отоброжаемого клиента в зависимости от направления перелистывания
+    if (Math.abs(pointsDifference) >= 20) {
+        if (pointsDifference < 0) {
+            if (clientNumber > 1) {
+                clientNumber--;
+            }
+        } else {
+            if (clientNumber < 3) {
+                clientNumber ++;
+            }
+        }
+    }
+
+    // Изменение класса первого клиента для движения слайдера
+    firstClient.className = `clients__carousel__client clients__carousel__client_${clientNumber}-client`;
+    // Изменение цвета радиокнопок в зависимости от отображаемого клиента
+    radios.forEach(item => {
+        if (item.value == clientNumber) {
+            item.checked = true;
+        } else {
+            item.checked = false;
+        }
+    })
+}
+
+// Обработчики на события начала и конца касания
+clientBlock.addEventListener('touchstart', e => points.startPoint = e.changedTouches[0].clientX);
+clientBlock.addEventListener('touchend', e => {setFinishPoint(e)});
